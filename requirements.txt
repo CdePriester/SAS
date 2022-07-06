@@ -1,5 +1,6 @@
 kadmos==0.9.11a2
 lxml==4.6.4
+matlab==0.1
 matplotlib==3.4.3
 numpy==1.21.4
 pandas==1.4.2

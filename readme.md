@@ -1,4 +1,6 @@
-# Surrogate Assistance System Module
+# Surrogate Advisory System (SAS)
+
+## Remark: Alpha phase; code-cleanup is needed
 
 This module will contain the full application, as it eventually will be distributed. Several submodules are found:
 
