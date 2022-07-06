@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:mappings xmlns:map="http://www.dlr.de/sistec/tiva/tool/mapping" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<map:mapping>
+    <map:source>/dataSchema/weights/a_w</map:source>
+    <map:target>/dataSchema/weights/a_w</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/area</map:source>
+    <map:target>/dataSchema/wing/area</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constraints/constants/initial_load</map:source>
+    <map:target>/dataSchema/constraints/constants/initial_load</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/errorFlags/fuel</map:source>
+    <map:target>/dataSchema/errorFlags/fuel</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/errorFlags/aero</map:source>
+    <map:target>/dataSchema/errorFlags/aero</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/errorFlags/struct</map:source>
+    <map:target>/dataSchema/errorFlags/struct</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/weights/fuel</map:source>
+    <map:target>/dataSchema/weights/fuel</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/weights/str_wing</map:source>
+    <map:target>/dataSchema/weights/str_wing</map:target>
+</map:mapping>
+</map:mappings>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <weights>
+        <fuel>0</fuel>
+    </weights>
+    <errorFlags>
+        <fuel>0</fuel>
+    </errorFlags>
+</dataSchema>

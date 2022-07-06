@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Costijn de Priester</creator>
+    <description>CMDOWS file of the Mishra Bird optimization problem</description>
+    <timestamp>05/06/2022, 12:48:55</timestamp>
+    <fileVersion>1</fileVersion>
+    <cmdowsVersion>0.8</cmdowsVersion>
+    <organization>
+      <contacts>
+        <contact uID="cdepriester">
+          <name>Costijn de Priester</name>
+          <email>c.l.a.depriester@student.tudelft.nl</email>
+          <company>TU Delft</company>
+          <department>Flight Performance and Propulsion</department>
+          <function>MSc student</function>
+        </contact>
+      </contacts>
+    </organization>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="mishra_bird">
+        <ID>mishra_bird</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>mishra_bird</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mishra_bird.py" -i "${dir:tool}\cpacs_in\cpacs_in.xml" -o "${dir:tool}\cpacs_out\cpacs_out.xml" </command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="mishra_constraint">
+        <ID>mishra_constraint</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>mishra_constraint</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mishra_constraint.py" -i "${dir:tool}\cpacs_in\cpacs_in.xml" -o "${dir:tool}\cpacs_out\cpacs_out.xml" </command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+</cmdows>

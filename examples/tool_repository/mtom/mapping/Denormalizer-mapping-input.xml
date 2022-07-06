@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:mappings xmlns:map="http://www.dlr.de/sistec/tiva/tool/mapping" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/inner/sweep</map:source>
+    <map:target>/dataSchema/normalized/wing/inner/sweep</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/inner/chord</map:source>
+    <map:target>/dataSchema/normalized/wing/inner/chord</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/mid/twist</map:source>
+    <map:target>/dataSchema/normalized/wing/mid/twist</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/outer/twist</map:source>
+    <map:target>/dataSchema/normalized/wing/outer/twist</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/outer/span</map:source>
+    <map:target>/dataSchema/normalized/wing/outer/span</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/outer/chord</map:source>
+    <map:target>/dataSchema/normalized/wing/outer/chord</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/normalized/wing/outer/sweep</map:source>
+    <map:target>/dataSchema/normalized/wing/outer/sweep</map:target>
+</map:mapping>
+</map:mappings>

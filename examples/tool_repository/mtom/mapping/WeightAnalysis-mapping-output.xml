@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:mappings xmlns:map="http://www.dlr.de/sistec/tiva/tool/mapping" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<map:mapping>
+    <map:source>/dataSchema/weights/to_max</map:source>
+    <map:target>/dataSchema/weights/to_max</map:target>
+</map:mapping>
+</map:mappings>

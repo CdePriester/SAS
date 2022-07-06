@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <errorFlags>
+        <fuel>0</fuel>
+        <aero>0</aero>
+        <struct>0</struct>
+    </errorFlags>
+    <wing>
+        <inner>
+            <chord>0</chord>
+            <sweep>0</sweep>
+            <span>0</span>
+        </inner>
+        <outer>
+            <span>0</span>
+            <chord>0</chord>
+        </outer>
+    </wing>
+    <weights>
+        <fuel>0</fuel>
+        <a_w>0</a_w>
+        <str_wing>0</str_wing>
+    </weights>
+    <constraints>
+        <constants>
+            <initial_load>0</initial_load>
+        </constants>
+    </constraints>
+</dataSchema>

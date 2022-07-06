@@ -1,0 +1,99 @@
+{
+  "alwaysRun" : true,
+  "commandScriptLinux" : "",
+  "commandScriptWindows" : "echo \"Test\"",
+  "copyToolBehavior" : "once",
+  "cpacsInitialEndpointName" : "CPACS initial",
+  "cpacsOutgoingEndpointName" : "CPACS out",
+  "cpacsResultFilename" : "cpacsResult.xml",
+  "deleteWorkingDirectoriesAfterWorkflowExecution" : false,
+  "deleteWorkingDirectoriesNever" : true,
+  "documentationFilePath" : "",
+  "dynamicInputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "inputinputHandlingOptions" : [ "Single", "Constant", "Queue" ],
+    "defaultInputHandling" : "Single",
+    "inputinputExecutionConstraintOptions" : [ "Required", "RequiredIfConnected" ],
+    "defaultInputExecutionConstraint" : "Required",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "dynamicOutputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "enableCommandScriptWindows" : true,
+  "groupName" : "CPACS",
+  "hasToolSpecificInput" : false,
+  "imitationScript" : "",
+  "imitationToolOutputFilename" : "ImitationMode/dummyOutput.xml",
+  "inputs" : [ {
+    "endpointFolder" : "Input folder",
+    "endpointFileName" : "CPACS_initial.xml",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS initial",
+    "inputHandling" : "Single:Queue",
+    "defaultInputHandling" : "Queue",
+    "endpointUsage" : "required"
+  } ],
+  "integrationType" : "CPACS",
+  "isActive" : true,
+  "launchSettings" : [ {
+    "limitInstallationInstancesNumber" : "10",
+    "limitInstallationInstances" : "true",
+    "rootWorkingDirectory" : "C:\\Dev\\Thesis\\rce_output",
+    "host" : "RCE",
+    "toolDirectory" : "C:\\Dev\\Thesis\\surrogateassistancesystem",
+    "version" : "0.3"
+  } ],
+  "mappingInputFilename" : "mappingInput.xml",
+  "mappingOutputFilename" : "mappingOutput.xml",
+  "outputs" : [ {
+    "endpointFolder" : "",
+    "endpointFileName" : "",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS out",
+    "endpointUsage" : "-"
+  } ],
+  "postScript" : "",
+  "preScript" : "",
+  "setToolDirAsWorkingDir" : true,
+  "toolDescription" : "Dit is een test-tool.\r\n\r\nOntwikkeld voor het Surrogate Assistance System, te ...\r\n\r\nOorspronkelijke tool: C:\\help\r\nHuidige locatie: C:\\Dev\\Thesis\\Test",
+  "toolIconPath" : "",
+  "toolInputFileName" : "ToolInput/toolInput.xml",
+  "toolIntegrationVersion" : 1,
+  "toolIntegratorE-Mail" : "",
+  "toolIntegratorName" : "",
+  "toolName" : "Testing123",
+  "toolOutputFilename" : "ToolOutput/toolOutput.xml",
+  "toolProperties" : {
+    "Default" : { }
+  },
+  "toolspecificInputdataFilename" : "",
+  "toolspecificMappingFilename" : "",
+  "uploadIcon" : true,
+  "useIterationDirectories" : true
+}

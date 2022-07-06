@@ -1,0 +1,17 @@
+----------------------------------------------------------------
+Wed Jan 26 11:26:44 CET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-017e-95ec-62ae-000018c42e98 
+on database directory C:\Users\Costijn\.rce\default\storage\metadata with class loader org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@15484c05 
+Loaded from file:/C:/Dev/Thesis/rce/plugins/de.rcenvironment.platform.maven.database_8.2.2.201805301313/lib/maven/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_311-b11
+user.dir=C:\Dev\Thesis\surrogateassistancesystem\sas\core
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+derby.stream.error.file=C:\Users\Costijn\.rce\default\storage\derby.log
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Jan 26 11:27:45 CET 2022:
+Shutting down instance a816c00e-017e-95ec-62ae-000018c42e98 on database directory C:\Users\Costijn\.rce\default\storage\metadata with class loader org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@15484c05 

@@ -1,0 +1,127 @@
+{
+    "alwaysRun": true,
+    "commandScriptLinux": "",
+    "commandScriptWindows": "call \"C:\\Dev\\Thesis\\surrogateassistancesystem\\venv\\Scripts\\activate.bat\"\n\rpython \"C:\\Users\\Costijn\\.sas\\tool_repos\\D1\\executeSurrogateD1.py\" -s \"C:\\Users\\Costijn\\.sas\\tool_repos\\D1\\D1.pickle\" -i \"${dir:tool}\\cpacs_in\\cpacs_in.xml\" -o \"${dir:tool}\\cpacs_out\\cpacs_out.xml\" ",
+    "copyToolBehavior": "once",
+    "cpacsInitialEndpointName": "CPACS initial",
+    "cpacsOutgoingEndpointName": "CPACS out",
+    "cpacsResultFilename": "cpacsResult.xml",
+    "deleteWorkingDirectoriesAfterWorkflowExecution": false,
+    "deleteWorkingDirectoriesNever": true,
+    "documentationFilePath": "",
+    "dynamicInputs": [
+        {
+            "endpointIdentifier": "default",
+            "endpointDataTypes": [
+                "Boolean",
+                "ShortText",
+                "Integer",
+                "Float"
+            ],
+            "endpointDefaultDataType": "Float",
+            "inputinputHandlingOptions": [
+                "Single",
+                "Constant",
+                "Queue"
+            ],
+            "defaultInputHandling": "Single",
+            "inputinputExecutionConstraintOptions": [
+                "Required",
+                "RequiredIfConnected"
+            ],
+            "defaultInputExecutionConstraint": "Required",
+            "endpointMetaData": {
+                "variable.xpath": {
+                    "guiName": "XPath",
+                    "guiPosition": "0",
+                    "guiGroup": "XML values",
+                    "visibility": "shown",
+                    "defaultValue": "",
+                    "validation": "required",
+                    "persistent": "true"
+                }
+            }
+        }
+    ],
+    "dynamicOutputs": [
+        {
+            "endpointIdentifier": "default",
+            "endpointDataTypes": [
+                "Boolean",
+                "ShortText",
+                "Integer",
+                "Float"
+            ],
+            "endpointDefaultDataType": "Float",
+            "endpointMetaData": {
+                "variable.xpath": {
+                    "guiName": "XPath",
+                    "guiPosition": "0",
+                    "guiGroup": "XML values",
+                    "visibility": "shown",
+                    "defaultValue": "",
+                    "validation": "required",
+                    "persistent": "true"
+                }
+            }
+        }
+    ],
+    "enableCommandScriptWindows": true,
+    "groupName": "CPACS",
+    "hasToolSpecificInput": false,
+    "imitationScript": "",
+    "imitationToolOutputFilename": "ImitationMode/dummyOutput.xml",
+    "inputs": [
+        {
+            "endpointFolder": "Input folder",
+            "endpointFileName": "CPACS_initial.xml",
+            "endpointDataType": "FileReference",
+            "endpointName": "CPACS initial",
+            "inputHandling": "Single:Queue",
+            "defaultInputHandling": "Queue",
+            "endpointUsage": "required"
+        }
+    ],
+    "integrationType": "CPACS",
+    "isActive": true,
+    "launchSettings": [
+        {
+            "limitInstallationInstancesNumber": "10",
+            "limitInstallationInstances": "true",
+            "rootWorkingDirectory": "C:\\Users\\Costijn\\.sas\\RCE_output\\unprocessed",
+            "host": "RCE",
+            "toolDirectory": "C:\\Users\\Costijn\\.sas\\tool_repos\\D1",
+            "version": "1.0"
+        }
+    ],
+    "mappingInputFilename": "mappingInput.xml",
+    "mappingOutputFilename": "mappingOutput.xml",
+    "outputs": [
+        {
+            "endpointFolder": "",
+            "endpointFileName": "",
+            "endpointDataType": "FileReference",
+            "endpointName": "CPACS out",
+            "endpointUsage": "-"
+        }
+    ],
+    "postScript": "",
+    "preScript": "",
+    "setToolDirAsWorkingDir": true,
+    "toolDescription": "Surrogate Model",
+    "toolIconPath": "",
+    "toolInputFileName": "cpacs_in\\cpacs_in.xml",
+    "toolIntegrationVersion": 1,
+    "toolIntegratorE-Mail": "",
+    "toolIntegratorName": "",
+    "toolName": "D1",
+    "toolOutputFilename": "cpacs_out\\cpacs_out.xml",
+    "toolProperties": {
+        "Default": {}
+    },
+    "toolspecificInputdataFilename": "",
+    "toolspecificMappingFilename": "",
+    "uploadIcon": true,
+    "useIterationDirectories": true,
+    "deleteWorkingDirectoriesAfterWorkflowExeuction": false
+}

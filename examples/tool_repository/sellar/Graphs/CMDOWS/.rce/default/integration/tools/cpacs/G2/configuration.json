@@ -1,0 +1,131 @@
+{
+    "alwaysRun": true,
+    "commandScriptLinux": "",
+    "commandScriptWindows": "call \"C:\\Dev\\Thesis\\surrogateassistancesystem\\venv\\Scripts\\activate.bat\"\r\npython G2.py",
+    "copyToolBehavior": "once",
+    "cpacsInitialEndpointName": "CPACS initial",
+    "cpacsOutgoingEndpointName": "CPACS out",
+    "cpacsResultFilename": "cpacsResult.xml",
+    "deleteWorkingDirectoriesAfterWorkflowExecution": false,
+    "documentationFilePath": "",
+    "dynamicInputs": [
+        {
+            "endpointIdentifier": "default",
+            "endpointDataTypes": [
+                "Boolean",
+                "ShortText",
+                "Integer",
+                "Float"
+            ],
+            "endpointDefaultDataType": "Float",
+            "inputinputHandlingOptions": [
+                "Single",
+                "Constant",
+                "Queue"
+            ],
+            "defaultInputHandling": "Single",
+            "inputinputExecutionConstraintOptions": [
+                "Required",
+                "RequiredIfConnected"
+            ],
+            "defaultInputExecutionConstraint": "Required",
+            "endpointMetaData": {
+                "variable.xpath": {
+                    "guiName": "XPath",
+                    "guiPosition": "0",
+                    "guiGroup": "XML values",
+                    "visibility": "shown",
+                    "defaultValue": "",
+                    "validation": "required",
+                    "persistent": "true"
+                }
+            }
+        }
+    ],
+    "dynamicOutputs": [
+        {
+            "endpointIdentifier": "default",
+            "endpointDataTypes": [
+                "Boolean",
+                "ShortText",
+                "Integer",
+                "Float"
+            ],
+            "endpointDefaultDataType": "Float",
+            "endpointMetaData": {
+                "variable.xpath": {
+                    "guiName": "XPath",
+                    "guiPosition": "0",
+                    "guiGroup": "XML values",
+                    "visibility": "shown",
+                    "defaultValue": "",
+                    "validation": "required",
+                    "persistent": "true"
+                }
+            }
+        }
+    ],
+    "enableCommandScriptWindows": true,
+    "groupName": "CPACS",
+    "hasToolSpecificInput": false,
+    "imitationScript": "${out:Return directory} = \"${dir:tool}/ImitationMode/DummyReturnDirectory\"",
+    "imitationToolOutputFilename": "ImitationMode/dummyOutput.xml",
+    "inputs": [
+        {
+            "endpointFolder": "Input folder",
+            "endpointFileName": "CPACS_initial.xml",
+            "endpointDataType": "FileReference",
+            "endpointName": "CPACS initial",
+            "inputHandling": "Single:Queue",
+            "defaultInputHandling": "Queue",
+            "endpointUsage": "required"
+        }
+    ],
+    "integrationType": "CPACS",
+    "isActive": true,
+    "launchSettings": [
+        {
+            "limitInstallationInstancesNumber": "1",
+            "limitInstallationInstances": "true",
+            "rootWorkingDirectory": "C:\\Users\\Costijn\\.sas\\RCE_output\\unprocessed",
+            "host": "RCE",
+            "toolDirectory": "C:\\Dev\\Thesis\\surrogateassistancesystem\\tool_repository\\sellar",
+            "version": "0.01"
+        }
+    ],
+    "mappingInputFilename": "mappingInput.xml",
+    "mappingOutputFilename": "mappingOutput.xml",
+    "outputs": [
+        {
+            "endpointFolder": "",
+            "endpointFileName": "",
+            "endpointDataType": "FileReference",
+            "endpointName": "CPACS out",
+            "endpointUsage": "-"
+        },
+        {
+            "endpointDataType": "DirectoryReference",
+            "endpointName": "Return directory",
+            "endpointUsage": "-"
+        }
+    ],
+    "postScript": "${out:Return directory} = \"${dir:tool}/ReturnDirectory\"",
+    "preScript": "",
+    "setToolDirAsWorkingDir": true,
+    "toolDescription": "",
+    "toolIconPath": "",
+    "toolInputFileName": "ToolInput/cpacs_in.xml",
+    "toolIntegrationVersion": 1,
+    "toolIntegratorE-Mail": "",
+    "toolIntegratorName": "",
+    "toolName": "G2",
+    "toolOutputFilename": "ToolOutput/cpacs_out.xml",
+    "toolProperties": {
+        "Default": {}
+    },
+    "toolspecificInputdataFilename": "",
+    "toolspecificMappingFilename": "",
+    "uploadIcon": true,
+    "deleteWorkingDirectoriesNever": true,
+    "useIterationDirectories": true
+}

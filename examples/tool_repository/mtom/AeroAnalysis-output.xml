@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <wing>
+        <L_D>0</L_D>
+    </wing>
+    <errorFlags>
+        <aero>0</aero>
+    </errorFlags>
+</dataSchema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <wing>
+        <inner>
+            <chord>0</chord>
+            <sweep>0</sweep>
+            <span>0</span>
+        </inner>
+        <outer>
+            <span>0</span>
+            <chord>0</chord>
+        </outer>
+    </wing>
+    <weights>
+        <to_max>0</to_max>
+    </weights>
+    <constraints>
+        <constants>
+            <initial_load>0</initial_load>
+        </constants>
+    </constraints>
+</dataSchema>

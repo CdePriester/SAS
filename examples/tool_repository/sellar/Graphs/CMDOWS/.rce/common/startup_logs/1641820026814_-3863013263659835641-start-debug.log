@@ -1,0 +1,2 @@
+2022-01-10 14:07:08,273 DEBUG - org.ops4j.pax.logging.pax-logging-service - BundleEvent STARTED - org.ops4j.pax.logging.pax-logging-service
+2022-01-10 14:07:08,276 DEBUG - de.rcenvironment.core.configuration.bootstrap - BundleEvent STARTING - de.rcenvironment.core.configuration.bootstrap

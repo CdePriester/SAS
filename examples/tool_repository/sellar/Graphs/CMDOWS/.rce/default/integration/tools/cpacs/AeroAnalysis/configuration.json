@@ -1,0 +1,98 @@
+{
+  "alwaysRun" : true,
+  "commandScriptLinux" : "",
+  "commandScriptWindows" : "echo \"wahed\"\r\n",
+  "copyToolBehavior" : "once",
+  "cpacsInitialEndpointName" : "CPACS initial",
+  "cpacsOutgoingEndpointName" : "CPACS out",
+  "cpacsResultFilename" : "cpacsResult.xml",
+  "deleteWorkingDirectoriesAfterWorkflowExecution" : true,
+  "documentationFilePath" : "",
+  "dynamicInputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "inputinputHandlingOptions" : [ "Single", "Constant", "Queue" ],
+    "defaultInputHandling" : "Single",
+    "inputinputExecutionConstraintOptions" : [ "Required", "RequiredIfConnected" ],
+    "defaultInputExecutionConstraint" : "Required",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "dynamicOutputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "enableCommandScriptWindows" : true,
+  "groupName" : "CPACS",
+  "hasToolSpecificInput" : true,
+  "imitationModeSupported" : true,
+  "imitationScript" : "",
+  "imitationToolOutputFilename" : "ImitationMode/dummyOutput.xml",
+  "inputs" : [ {
+    "endpointFolder" : "Input folder",
+    "endpointFileName" : "CPACS_initial.xml",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS initial",
+    "inputHandling" : "Single:Queue",
+    "defaultInputHandling" : "Queue",
+    "endpointUsage" : "required"
+  } ],
+  "integrationType" : "CPACS",
+  "isActive" : true,
+  "launchSettings" : [ {
+    "limitInstallationInstancesNumber" : "10",
+    "limitInstallationInstances" : "true",
+    "rootWorkingDirectory" : "",
+    "host" : "RCE",
+    "toolDirectory" : "C:\\Dev\\Thesis\\kadmos\\examples\\knowledgebases\\ssbj",
+    "version" : "1"
+  } ],
+  "mappingInputFilename" : "mappingInput.xml",
+  "mappingOutputFilename" : "mappingOutput.xml",
+  "outputs" : [ {
+    "endpointFolder" : "",
+    "endpointFileName" : "",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS out",
+    "endpointUsage" : "-"
+  } ],
+  "postScript" : "",
+  "preScript" : "",
+  "setToolDirAsWorkingDir" : true,
+  "toolDescription" : "",
+  "toolIconPath" : "",
+  "toolInputFileName" : "ToolInput/toolInput.xml",
+  "toolIntegrationVersion" : 1,
+  "toolIntegratorE-Mail" : "Rendier",
+  "toolIntegratorName" : "Wahed",
+  "toolName" : "AeroAnalysis",
+  "toolOutputFilename" : "ToolOutput/toolOutput.xml",
+  "toolProperties" : {
+    "Default" : { }
+  },
+  "toolspecificInputdataFilename" : "ToolSpecificInputData.xml",
+  "toolspecificMappingFilename" : "ToolSpecificMapping.xml",
+  "uploadIcon" : true
+}

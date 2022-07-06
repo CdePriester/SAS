@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Costijn de Priester</creator>
+    <description>CMDOWS file for testing the Sellar bechmark problem in RCE</description>
+    <timestamp>05-01-2022</timestamp>
+    <fileVersion>0.1</fileVersion>
+    <cmdowsVersion>0.8</cmdowsVersion>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="D1D2">
+        <ID>D1D2</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>D1D2</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/D1D2.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="D1">
+        <ID>D1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>D1</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/D1.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="D2">
+        <ID>D2</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>D2</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/D2.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="F1">
+        <ID>F1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>F1</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/F1.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="G1">
+        <ID>G1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>G1</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/G1.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="G2">
+        <ID>G2</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>G2</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/G2.py"</command>
+                <description></description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+</cmdows>

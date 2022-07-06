@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <wing>
+        <L_D>0</L_D>
+    </wing>
+    <performance>
+        <range_cruise>0</range_cruise>
+        <C_T>0</C_T>
+        <V_cruise>0</V_cruise>
+    </performance>
+    <weights>
+        <fuel>0</fuel>
+        <a_w>0</a_w>
+        <str_wing>0</str_wing>
+    </weights>
+</dataSchema>

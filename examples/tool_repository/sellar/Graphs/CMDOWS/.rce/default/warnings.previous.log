@@ -1,0 +1,22 @@
+2022-01-26 11:26:09,953 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils - Traceback (most recent call last):
+2022-01-26 11:26:09,958 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -   File "C:\Users\Costijn\.sas\tool_repos\D1\executeSurrogateD1.py", line 48, in <module>
+2022-01-26 11:26:09,960 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -     discipline.write_cpacs_surrogate_response(cpacs_in=cpacs_in,
+2022-01-26 11:26:09,961 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -   File "C:\Dev\Thesis\surrogateassistancesystem\sas\core\discipline.py", line 152, in write_cpacs_surrogate_response
+2022-01-26 11:26:09,961 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -     cpacs.update_value(variable, response[variable])
+2022-01-26 11:26:09,962 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -   File "C:\Dev\Thesis\surrogateassistancesystem\sas\core\discipline.py", line 183, in update_value
+2022-01-26 11:26:09,962 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils -     el = self.root.xpath(xpath)[0]
+2022-01-26 11:26:09,963 WARN  - de.rcenvironment.core.component.execution.api.ConsoleRowUtils - IndexError: list index out of range
+2022-01-26 11:26:10,004 ERROR - de.rcenvironment.core.component.execution.internal.ComponentExecutor - E#1643192770004: Executing component 'D1' (7fd5d01e-3389-42a5-8920-647c8f69872c) of workflow 'Lets_find_this' (45689a33-a28a-474f-9f2b-111e278c0a70) failed:
+de.rcenvironment.core.component.api.ComponentException: Command(s) execution terminated abnormally with exit code: 1
+	at de.rcenvironment.core.component.integration.CommonToolIntegratorComponent.runCommand(CommonToolIntegratorComponent.java:652)
+	at de.rcenvironment.core.component.integration.CommonToolIntegratorComponent.performRunInNormalMode(CommonToolIntegratorComponent.java:508)
+	at de.rcenvironment.core.component.integration.CommonToolIntegratorComponent.processInputs(CommonToolIntegratorComponent.java:460)
+	at de.rcenvironment.core.component.execution.internal.ComponentExecutor.execute(ComponentExecutor.java:359)
+	at de.rcenvironment.core.component.execution.internal.ComponentExecutor$1.call(ComponentExecutor.java:340)
+	at de.rcenvironment.core.component.execution.internal.ComponentExecutor$1.call(ComponentExecutor.java:1)
+	at de.rcenvironment.toolkit.modules.concurrency.internal.AsyncTaskServiceImpl$WrappedCallable.call(AsyncTaskServiceImpl.java:269)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2022-01-26 11:26:10,073 ERROR - de.rcenvironment.core.component.workflow.execution.internal.WorkflowStateMachine - Workflow 'Lets_find_this' (45689a33-a28a-474f-9f2b-111e278c0a70) will be cancelled because component 'D1' on "Default instance started by "Costijn" on DESKTOP-8NF2EEM" [22c08262ed83c3dd16b1401178871328:0] failed: for more information, look for the error marker E#1643192770004 in the log files of "Default instance started by "Costijn" on DESKTOP-8NF2EEM" [22c08262ed83c3dd16b1401178871328:0]

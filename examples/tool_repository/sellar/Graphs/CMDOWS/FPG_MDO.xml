@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Imco van Gent</creator>
+    <description>FPG CMDOWS file of the SSBJ test case</description>
+    <timestamp>2022-06-22T20:01:03.543118</timestamp>
+    <fileVersion>0.1</fileVersion>
+    <cmdowsVersion>0.9</cmdowsVersion>
+    <updates>
+      <update>
+        <modification>KADMOS export of a fundamental problem graph (FPG).</modification>
+        <creator>Imco van Gent</creator>
+        <timestamp>2022-06-22T20:01:03.543118</timestamp>
+        <fileVersion>0.1</fileVersion>
+        <cmdowsVersion>0.9</cmdowsVersion>
+      </update>
+    </updates>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="G1">
+        <label>G1</label>
+        <instanceID>0</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/analyses/y1</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/analyses/g1</parameterUID>
+          </output>
+        </outputs>
+        <ID>G1</ID>
+        <modeID>normal</modeID>
+        <version>0.1</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/G1.py"</command>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="G2">
+        <label>G2</label>
+        <instanceID>0</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/analyses/y2</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/analyses/g2</parameterUID>
+          </output>
+        </outputs>
+        <ID>G2</ID>
+        <modeID>normal</modeID>
+        <version>0.1</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/G2.py"</command>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="D1">
+        <label>D1</label>
+        <instanceID>0</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/variables/x1</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/variables/z1</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/variables/z2</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/analyses/y2</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/settings/c</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/analyses/y1</parameterUID>
+          </output>
+        </outputs>
+        <ID>D1</ID>
+        <modeID>normal</modeID>
+        <version>0.1</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/D1.py"</command>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="D2">
+        <label>D2</label>
+        <instanceID>0</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/variables/z1</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/variables/z2</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/settings/c</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/analyses/y1</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/analyses/y2</parameterUID>
+          </output>
+        </outputs>
+        <ID>D2</ID>
+        <modeID>normal</modeID>
+        <version>0.1</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/D2.py"</command>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="F1">
+        <label>F1</label>
+        <instanceID>0</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/variables/x1</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/variables/z2</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/analyses/y2</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/analyses/y1</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/analyses/f</parameterUID>
+          </output>
+        </outputs>
+        <ID>F1</ID>
+        <modeID>normal</modeID>
+        <version>0.1</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" &#13;
+ python "${dir:tool}/F1.py"</command>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+  <parameters>
+    <parameter uID="/dataSchema/variables/x1">
+      <label>x1</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/variables/z1">
+      <label>z1</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/variables/z2">
+      <label>z2</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/settings/c">
+      <label>c</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/analyses/f">
+      <label>f</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/analyses/g1">
+      <label>g1</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/analyses/g2">
+      <label>g2</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/analyses/y2">
+      <label>y2</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/analyses/y1">
+      <label>y1</label>
+      <instanceID>1</instanceID>
+    </parameter>
+  </parameters>
+  <problemDefinition uID="MDFGauss-Seidel">
+    <problemFormulation>
+      <mdaoArchitecture>MDF</mdaoArchitecture>
+      <convergerType>Gauss-Seidel</convergerType>
+      <executableBlocksOrder>
+        <executableBlockUID position="1">D1</executableBlockUID>
+        <executableBlockUID position="2">D2</executableBlockUID>
+        <executableBlockUID position="3">F1</executableBlockUID>
+        <executableBlockUID position="4">G1</executableBlockUID>
+        <executableBlockUID position="5">G2</executableBlockUID>
+      </executableBlocksOrder>
+      <allowUnconvergedCouplings>false</allowUnconvergedCouplings>
+    </problemFormulation>
+    <problemRoles>
+      <parameters>
+        <designVariables>
+          <designVariable uID="__desVar__/dataSchema/variables/x1">
+            <parameterUID>/dataSchema/variables/x1</parameterUID>
+            <nominalValue>1</nominalValue>
+            <validRanges>
+              <limitRange>
+                <minimum>0</minimum>
+                <maximum>10</maximum>
+              </limitRange>
+            </validRanges>
+          </designVariable>
+          <designVariable uID="__desVar__/dataSchema/variables/z1">
+            <parameterUID>/dataSchema/variables/z1</parameterUID>
+            <nominalValue>0.01</nominalValue>
+            <validRanges>
+              <limitRange>
+                <minimum>-10</minimum>
+                <maximum>10</maximum>
+              </limitRange>
+            </validRanges>
+          </designVariable>
+          <designVariable uID="__desVar__/dataSchema/variables/z2">
+            <parameterUID>/dataSchema/variables/z2</parameterUID>
+            <nominalValue>0.01</nominalValue>
+            <validRanges>
+              <limitRange>
+                <minimum>0</minimum>
+                <maximum>10</maximum>
+              </limitRange>
+            </validRanges>
+          </designVariable>
+        </designVariables>
+        <objectiveVariables>
+          <objectiveVariable uID="__objVar__/dataSchema/analyses/f">
+            <parameterUID>/dataSchema/analyses/f</parameterUID>
+          </objectiveVariable>
+        </objectiveVariables>
+        <constraintVariables>
+          <constraintVariable uID="__conVar__/dataSchema/analyses/g1">
+            <parameterUID>/dataSchema/analyses/g1</parameterUID>
+            <constraintType>inequality</constraintType>
+            <constraintOperator>&gt;=</constraintOperator>
+            <referenceValue>0</referenceValue>
+          </constraintVariable>
+          <constraintVariable uID="__conVar__/dataSchema/analyses/g2">
+            <parameterUID>/dataSchema/analyses/g2</parameterUID>
+            <constraintType>inequality</constraintType>
+            <constraintOperator>&gt;=</constraintOperator>
+            <referenceValue>0</referenceValue>
+          </constraintVariable>
+        </constraintVariables>
+      </parameters>
+      <executableBlocks>
+        <coupledBlocks>
+          <coupledBlock>D1</coupledBlock>
+          <coupledBlock>D2</coupledBlock>
+        </coupledBlocks>
+        <postCouplingBlocks>
+          <postCouplingBlock>F1</postCouplingBlock>
+          <postCouplingBlock>G1</postCouplingBlock>
+          <postCouplingBlock>G2</postCouplingBlock>
+        </postCouplingBlocks>
+      </executableBlocks>
+    </problemRoles>
+  </problemDefinition>
+  <workflow>
+    <dataGraph>
+      <name>FPG - MDO</name>
+      <edges>
+        <edge>
+          <fromExecutableBlockUID>D1</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/analyses/y1</toParameterUID>
+        </edge>
+        <edge>
+          <fromExecutableBlockUID>D2</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/analyses/y2</toParameterUID>
+        </edge>
+        <edge>
+          <fromExecutableBlockUID>F1</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/analyses/f</toParameterUID>
+        </edge>
+        <edge>
+          <fromExecutableBlockUID>G1</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/analyses/g1</toParameterUID>
+        </edge>
+        <edge>
+          <fromExecutableBlockUID>G2</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/analyses/g2</toParameterUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/x1</fromParameterUID>
+          <toExecutableBlockUID>D1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/x1</fromParameterUID>
+          <toExecutableBlockUID>F1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/z1</fromParameterUID>
+          <toExecutableBlockUID>D1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/z1</fromParameterUID>
+          <toExecutableBlockUID>D2</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/z2</fromParameterUID>
+          <toExecutableBlockUID>D1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/z2</fromParameterUID>
+          <toExecutableBlockUID>D2</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/variables/z2</fromParameterUID>
+          <toExecutableBlockUID>F1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y2</fromParameterUID>
+          <toExecutableBlockUID>D1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y2</fromParameterUID>
+          <toExecutableBlockUID>F1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y2</fromParameterUID>
+          <toExecutableBlockUID>G2</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/settings/c</fromParameterUID>
+          <toExecutableBlockUID>D1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/settings/c</fromParameterUID>
+          <toExecutableBlockUID>D2</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y1</fromParameterUID>
+          <toExecutableBlockUID>D2</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y1</fromParameterUID>
+          <toExecutableBlockUID>F1</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/analyses/y1</fromParameterUID>
+          <toExecutableBlockUID>G1</toExecutableBlockUID>
+        </edge>
+      </edges>
+    </dataGraph>
+  </workflow>
+</cmdows>

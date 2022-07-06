@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:mappings xmlns:map="http://www.dlr.de/sistec/tiva/tool/mapping" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<map:mapping>
+    <map:source>/dataSchema/weights/a_w</map:source>
+    <map:target>/dataSchema/weights/a_w</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/rho_cruise</map:source>
+    <map:target>/dataSchema/constants/rho_cruise</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/span</map:source>
+    <map:target>/dataSchema/wing/inner/span</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/sweep</map:source>
+    <map:target>/dataSchema/wing/inner/sweep</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/chord</map:source>
+    <map:target>/dataSchema/wing/inner/chord</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_1</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_1</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_2</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_2</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_3</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_3</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_4</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_4</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_5</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_5</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_6</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_6</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_7</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_7</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_8</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_8</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_9</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_9</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_10</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_10</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_11</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_11</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/inner/foil/b_12</map:source>
+    <map:target>/dataSchema/wing/inner/foil/b_12</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/span</map:source>
+    <map:target>/dataSchema/wing/outer/span</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/sweep</map:source>
+    <map:target>/dataSchema/wing/outer/sweep</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/chord</map:source>
+    <map:target>/dataSchema/wing/outer/chord</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_1</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_1</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_2</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_2</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_3</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_3</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_4</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_4</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_5</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_5</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_6</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_6</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_7</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_7</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_8</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_8</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_9</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_9</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_10</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_10</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_11</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_11</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/foil/b_12</map:source>
+    <map:target>/dataSchema/wing/outer/foil/b_12</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/C_D_aw</map:source>
+    <map:target>/dataSchema/constants/C_D_aw</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/C_D_aw_area</map:source>
+    <map:target>/dataSchema/constants/C_D_aw_area</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/c_sound</map:source>
+    <map:target>/dataSchema/constants/c_sound</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/h_cruise</map:source>
+    <map:target>/dataSchema/constants/h_cruise</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/visc_kin_cruise</map:source>
+    <map:target>/dataSchema/constants/visc_kin_cruise</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/constants/n_cruise</map:source>
+    <map:target>/dataSchema/constants/n_cruise</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/mid/twist</map:source>
+    <map:target>/dataSchema/wing/mid/twist</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/outer/twist</map:source>
+    <map:target>/dataSchema/wing/outer/twist</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/performance/V_cruise</map:source>
+    <map:target>/dataSchema/performance/V_cruise</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/weights/str_wing</map:source>
+    <map:target>/dataSchema/weights/str_wing</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/weights/fuel</map:source>
+    <map:target>/dataSchema/weights/fuel</map:target>
+</map:mapping>
+</map:mappings>

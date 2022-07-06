@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Costijn de Priester</creator>
+    <description>CMDOWS file of the MTOM optimization problem</description>
+    <timestamp>26/06/2022, 14:42:07</timestamp>
+    <fileVersion>0.1</fileVersion>
+    <cmdowsVersion>0.8</cmdowsVersion>
+    <organization>
+      <contacts>
+        <contact uID="cdepriester">
+          <name>Costijn de Priester</name>
+          <email>c.l.a.depriester@student.tudelft.nl</email>
+          <company>TU Delft</company>
+          <department>Flight Performance and Propulsion</department>
+          <function>MSc student</function>
+        </contact>
+      </contacts>
+    </organization>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="StructuralAnalysis">
+        <ID>StructuralAnalysis</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>StructuralAnalysis</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d StructuralAnalysis</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="AeroAnalysis">
+        <ID>AeroAnalysis</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>AeroAnalysis</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d AeroAnalysis</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="Denormalizer">
+        <ID>Denormalizer</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>Denormalizer</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d Denormalizer</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="LoadAnalysis">
+        <ID>LoadAnalysis</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>LoadAnalysis</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d LoadAnalysis</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="PerformanceAnalysis">
+        <ID>PerformanceAnalysis</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>PerformanceAnalysis</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d PerformanceAnalysis</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="WeightAnalysis">
+        <ID>WeightAnalysis</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>WeightAnalysis</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d WeightAnalysis</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="FuelConstraint">
+        <ID>FuelConstraint</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>FuelConstraint</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d FuelConstraint</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="WingloadingConstraint">
+        <ID>WingloadingConstraint</ID>
+        <modeID>1</modeID>
+        <instanceID>1</instanceID>
+        <version>1.0</version>
+        <label>WingloadingConstraint</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mtom_python_wrapper.py" -t ${dir:tool} -d WingloadingConstraint</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+</cmdows>

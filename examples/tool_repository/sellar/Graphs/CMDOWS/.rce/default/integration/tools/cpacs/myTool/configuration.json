@@ -1,0 +1,101 @@
+{
+  "alwaysRun" : true,
+  "commandScriptLinux" : "",
+  "commandScriptWindows" : "python run.py",
+  "copyToolBehavior" : "once",
+  "cpacsInitialEndpointName" : "CPACS initial",
+  "cpacsOutgoingEndpointName" : "CPACS out",
+  "cpacsResultFilename" : "cpacsResult.xml",
+  "deleteWorkingDirectoriesAfterWorkflowExecution" : true,
+  "documentationFilePath" : "myTool_documentation.pdf",
+  "dynamicInputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "inputinputHandlingOptions" : [ "Single", "Constant", "Queue" ],
+    "defaultInputHandling" : "Single",
+    "inputinputExecutionConstraintOptions" : [ "Required", "RequiredIfConnected" ],
+    "defaultInputExecutionConstraint" : "Required",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "dynamicOutputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "enableCommandScriptWindows" : true,
+  "groupName" : "CPACS",
+  "hasToolSpecificInput" : true,
+  "imitationScript" : "${out:Return directory} = \"${dir:tool}/ImitationMode/DummyReturnDirectory\"",
+  "imitationToolOutputFilename" : "ImitationMode/dummyOutput.xml",
+  "inputs" : [ {
+    "endpointFolder" : "Input folder",
+    "endpointFileName" : "CPACS_initial.xml",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS initial",
+    "inputHandling" : "Single:Queue",
+    "defaultInputHandling" : "Queue",
+    "endpointUsage" : "required"
+  } ],
+  "integrationType" : "CPACS",
+  "isActive" : true,
+  "launchSettings" : [ {
+    "limitInstallationInstancesNumber" : "10",
+    "limitInstallationInstances" : "true",
+    "rootWorkingDirectory" : "",
+    "host" : "RCE",
+    "toolDirectory" : "C:\\Dev\\Thesis\\CPACS-IFARX\\examples\\myTool",
+    "version" : "0.9"
+  } ],
+  "mappingInputFilename" : "mappingInput.xml",
+  "mappingOutputFilename" : "mappingOutput.xml",
+  "outputs" : [ {
+    "endpointFolder" : "",
+    "endpointFileName" : "",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS out",
+    "endpointUsage" : "-"
+  }, {
+    "endpointDataType" : "DirectoryReference",
+    "endpointName" : "Return directory",
+    "endpointUsage" : "-"
+  } ],
+  "postScript" : "${out:Return directory} = \"${dir:tool}/ReturnDirectory\"",
+  "preScript" : "",
+  "setToolDirAsWorkingDir" : true,
+  "toolDescription" : "This is my tool.",
+  "toolIconPath" : "tool_icon.png",
+  "toolInputFileName" : "ToolInput/toolInput.xml",
+  "toolIntegrationVersion" : 1,
+  "toolIntegratorE-Mail" : "costijndep@gmail.com",
+  "toolIntegratorName" : "Costijn",
+  "toolName" : "myTool",
+  "toolOutputFilename" : "ToolOutput/toolOutput.xml",
+  "toolProperties" : {
+    "Default" : { }
+  },
+  "toolspecificInputdataFilename" : "ToolSpecificInputData.xml",
+  "toolspecificMappingFilename" : "ToolSpecificMapping.xml",
+  "uploadIcon" : true
+}

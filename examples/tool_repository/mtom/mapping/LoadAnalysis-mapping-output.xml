@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:mappings xmlns:map="http://www.dlr.de/sistec/tiva/tool/mapping" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<map:mapping>
+    <map:source>/dataSchema/wing/cm_c4</map:source>
+    <map:target>/dataSchema/wing/cm_c4</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/ccl</map:source>
+    <map:target>/dataSchema/wing/ccl</map:target>
+</map:mapping>
+<map:mapping>
+    <map:source>/dataSchema/wing/Yst</map:source>
+    <map:target>/dataSchema/wing/Yst</map:target>
+</map:mapping>
+</map:mappings>

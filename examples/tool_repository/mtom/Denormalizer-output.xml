@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSchema>
+    <wing>
+        <inner>
+            <sweep>0</sweep>
+            <chord>0</chord>
+        </inner>
+        <mid>
+            <twist>0</twist>
+        </mid>
+        <outer>
+            <twist>0</twist>
+            <span>0</span>
+            <chord>0</chord>
+            <sweep>0</sweep>
+        </outer>
+    </wing>
+</dataSchema>

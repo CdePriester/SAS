@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Costijn de Priester</creator>
+    <description>CMDOWS file for testing the Sellar bechmark problem in RCE</description>
+    <timestamp>05-01-2022</timestamp>
+    <fileVersion>0.1</fileVersion>
+    <cmdowsVersion>0.8</cmdowsVersion>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="D1">
+        <ID>D1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>D1 discipline for Sellar Disk problem</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" ; python D1.py</command>
+                <description>Wat hier dan interessant zou zijn,. Lijkt wel lastig te worden met het feit dat alles noodzakelijk is.</description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="D2">
+        <ID>D2</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>D2 discipline for Sellar Disk problem</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" ; python D2.py</command>
+                <description>Wat hier dan interessant zou zijn,. Lijkt wel lastig te worden met het feit dat alles noodzakelijk is.</description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="F1">
+        <ID>F1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>F1 discipline for Sellar Disk problem</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" ; python F1.py</command>
+                <description>Wat hier dan interessant zou zijn,. Lijkt wel lastig te worden met het feit dat alles noodzakelijk is.</description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="G1">
+        <ID>G1</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>G1 discipline for Sellar Disk problem</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" ; python G1.py</command>
+                <description>Wat hier dan interessant zou zijn,. Lijkt wel lastig te worden met het feit dat alles noodzakelijk is.</description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="G2">
+        <ID>G2</ID>
+        <modeID>normal</modeID>
+        <instanceID>0</instanceID>
+        <version>0.1</version>
+        <label>G2 discipline for Sellar Disk problem</label>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat" ; python G2.py</command>
+                <description>Wat hier dan interessant zou zijn,. Lijkt wel lastig te worden met het feit dat alles noodzakelijk is.</description>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+</cmdows>

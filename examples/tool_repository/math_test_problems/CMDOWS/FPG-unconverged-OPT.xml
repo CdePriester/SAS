@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cmdows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://bitbucket.org/imcovangent/cmdows/raw/master/schema/0.9/cmdows.xsd">
+  <header>
+    <creator>Costijn de Priester</creator>
+    <description>not provided</description>
+    <timestamp>2022-06-05T12:48:55.383456</timestamp>
+    <fileVersion>1</fileVersion>
+    <cmdowsVersion>0.9</cmdowsVersion>
+    <updates>
+      <update>
+        <modification>KADMOS export of a fundamental problem graph (FPG).</modification>
+        <creator>Costijn de Priester</creator>
+        <timestamp>2022-06-05T12:48:55.383456</timestamp>
+        <fileVersion>1</fileVersion>
+        <cmdowsVersion>0.9</cmdowsVersion>
+      </update>
+    </updates>
+    <organization>
+      <contacts/>
+    </organization>
+  </header>
+  <executableBlocks>
+    <designCompetences>
+      <designCompetence uID="mishra_bird">
+        <label>mishra_bird</label>
+        <instanceID>1</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/x</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/y</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/f</parameterUID>
+          </output>
+        </outputs>
+        <ID>mishra_bird</ID>
+        <modeID>1</modeID>
+        <version>1.0</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mishra_bird.py" -i "${dir:tool}\cpacs_in\cpacs_in.xml" -o "${dir:tool}\cpacs_out\cpacs_out.xml"</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+      <designCompetence uID="mishra_constraint">
+        <label>mishra_constraint</label>
+        <instanceID>1</instanceID>
+        <inputs>
+          <input>
+            <parameterUID>/dataSchema/x</parameterUID>
+          </input>
+          <input>
+            <parameterUID>/dataSchema/y</parameterUID>
+          </input>
+        </inputs>
+        <outputs>
+          <output>
+            <parameterUID>/dataSchema/c</parameterUID>
+          </output>
+        </outputs>
+        <ID>mishra_constraint</ID>
+        <modeID>1</modeID>
+        <version>1.0</version>
+        <metadata>
+          <executionInfo>
+            <localComponentInfo>
+              <executionDetails>
+                <operatingSystem>Windows</operatingSystem>
+                <integrationPlatform>RCE</integrationPlatform>
+                <command>call "C:\Dev\Thesis\surrogateassistancesystem\venv\Scripts\activate.bat"
+&#13;python "${dir:tool}/mishra_constraint.py" -i "${dir:tool}\cpacs_in\cpacs_in.xml" -o "${dir:tool}\cpacs_out\cpacs_out.xml"</command>
+                <softwareRequirements>Matlab installed on executing PC</softwareRequirements>
+              </executionDetails>
+            </localComponentInfo>
+          </executionInfo>
+        </metadata>
+      </designCompetence>
+    </designCompetences>
+  </executableBlocks>
+  <parameters>
+    <parameter uID="/dataSchema/x">
+      <label>x</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/y">
+      <label>y</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/f">
+      <label>f</label>
+      <instanceID>1</instanceID>
+    </parameter>
+    <parameter uID="/dataSchema/c">
+      <label>c</label>
+      <instanceID>1</instanceID>
+    </parameter>
+  </parameters>
+  <problemDefinition uID="unconverged-OPTNone">
+    <problemFormulation>
+      <mdaoArchitecture>unconverged-OPT</mdaoArchitecture>
+      <executableBlocksOrder>
+        <executableBlockUID position="1">mishra_bird</executableBlockUID>
+        <executableBlockUID position="2">mishra_constraint</executableBlockUID>
+      </executableBlocksOrder>
+      <allowUnconvergedCouplings>true</allowUnconvergedCouplings>
+    </problemFormulation>
+    <problemRoles>
+      <parameters>
+        <designVariables>
+          <designVariable uID="__desVar__/dataSchema/x">
+            <parameterUID>/dataSchema/x</parameterUID>
+            <nominalValue>-5</nominalValue>
+            <validRanges>
+              <limitRange>
+                <minimum>-10</minimum>
+                <maximum>0</maximum>
+              </limitRange>
+            </validRanges>
+          </designVariable>
+          <designVariable uID="__desVar__/dataSchema/y">
+            <parameterUID>/dataSchema/y</parameterUID>
+            <nominalValue>-3.25</nominalValue>
+            <validRanges>
+              <limitRange>
+                <minimum>-6.5</minimum>
+                <maximum>0</maximum>
+              </limitRange>
+            </validRanges>
+          </designVariable>
+        </designVariables>
+        <objectiveVariables>
+          <objectiveVariable uID="__objVar__/dataSchema/f">
+            <parameterUID>/dataSchema/f</parameterUID>
+          </objectiveVariable>
+        </objectiveVariables>
+        <constraintVariables>
+          <constraintVariable uID="__conVar__/dataSchema/c">
+            <parameterUID>/dataSchema/c</parameterUID>
+            <constraintType>inequality</constraintType>
+            <constraintOperator>&lt;=</constraintOperator>
+            <referenceValue>0</referenceValue>
+          </constraintVariable>
+        </constraintVariables>
+      </parameters>
+      <executableBlocks>
+        <uncoupledDesVarDepBlocks>
+          <uncoupledDesVarDepBlock>mishra_bird</uncoupledDesVarDepBlock>
+          <uncoupledDesVarDepBlock>mishra_constraint</uncoupledDesVarDepBlock>
+        </uncoupledDesVarDepBlocks>
+      </executableBlocks>
+    </problemRoles>
+  </problemDefinition>
+  <workflow>
+    <dataGraph>
+      <edges>
+        <edge>
+          <fromExecutableBlockUID>mishra_bird</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/f</toParameterUID>
+        </edge>
+        <edge>
+          <fromExecutableBlockUID>mishra_constraint</fromExecutableBlockUID>
+          <toParameterUID>/dataSchema/c</toParameterUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/x</fromParameterUID>
+          <toExecutableBlockUID>mishra_bird</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/x</fromParameterUID>
+          <toExecutableBlockUID>mishra_constraint</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/y</fromParameterUID>
+          <toExecutableBlockUID>mishra_bird</toExecutableBlockUID>
+        </edge>
+        <edge>
+          <fromParameterUID>/dataSchema/y</fromParameterUID>
+          <toExecutableBlockUID>mishra_constraint</toExecutableBlockUID>
+        </edge>
+      </edges>
+    </dataGraph>
+  </workflow>
+</cmdows>
